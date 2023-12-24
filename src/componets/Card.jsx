@@ -24,7 +24,7 @@ function Card({props,card,setCard}) {
           <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div className="text-center">
             {
-            toggle? <button
+            toggle?<button
                 className="btn btn-outline-dark mt-auto"
                 onClick={() => {
                   setCard(card+1)
@@ -32,16 +32,16 @@ function Card({props,card,setCard}) {
                 }}
               >
                 add card
-              </button>:
-              <button
+              </button>
+               :<button
                 className="btn btn-outline-dark mt-auto"
                 onClick={() => {
                   setCard(card-1)
                   settoggle(true)
-                }}
-              >
+                }} >
                 Remove card
-              </button>}
+              </button>
+              }         
             </div>
           </div>
         </div>
